@@ -8,7 +8,7 @@ app.use(cors());
 require('dotenv').config();
 
 const server = http.createServer(app);
-app.get('', (req, res)=>{
+app.get('/home', (req, res)=>{
     console.log("helloworld")
     res.send('hello')
 })
